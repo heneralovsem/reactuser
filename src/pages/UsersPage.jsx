@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import '../styles/app.css'
-import UserBlock from "../components/UserBlock";
+import UserBlock from "../components/UserBlock/UserBlock";
 
 function UsersPage() {
 
@@ -16,7 +15,7 @@ function UsersPage() {
   }, [])
   console.log(data)
   return (
-    <div className="App">
+    <div>
         <div className="users__wrapper">
           {data.map((user) => (<UserBlock key={user.id} name={user.name} username={user.username} email={user.email} id={user.id} />))}
         </div>

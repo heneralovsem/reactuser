@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import cl from './UserBlock.module.css'
 import axios from "axios";
 import { Modal } from "@mui/material";
-import AlbumBlock from "./AlbumBlock";
+import AlbumBlock from "../AlbumBlock/AlbumBlock";
 import {useNavigate} from 'react-router-dom'
 const UserBlock = (props) => {
     const navigate = useNavigate()
